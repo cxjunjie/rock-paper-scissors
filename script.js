@@ -48,6 +48,13 @@ function playGame() {
         }
     }
     console.log("Score: \n"  + humanScore + " : " + computerScore);
+    if(humanScore > computerScore) {
+        console.log("Congratulations! You won!");
+    } else if(computerScore > humanScore) {
+        console.log("You lost! Try again next time");
+    } else {
+        console.log("It was a draw! Try again next time");
+    }
 }
 
 
